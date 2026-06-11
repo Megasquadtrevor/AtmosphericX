@@ -46,14 +46,6 @@
             "Severe Thunderstorm Watch",
             "Flash Flood Emergency", "Flash Flood Warning",
             "Flash Flood Watch",
-            "Tsunami Warning", "Tsunami Watch",
-            "Tsunami Advisory", "Special Marine Warning",
-            "Earthquake Warning", "Special Weather Statement" ,
-            "Hurricane Warning", "Hurricane Watch",
-            "Tropical Storm Warning",
-            "Winter Storm Warning", "Blizzard Warning",
-            "Ice Storm Warning", "Snow Squall Warning",
-            "Winter Weather Advisory", "Extreme Cold Watch"
         ],
         "priority_events": [ // Events that are prioritized for alerts and notifications. (Will bypass sfx and update ignoring settings)
             "Tornado Emergency", "PDS Tornado Warning",
@@ -63,15 +55,6 @@
             "Destructive Severe Thunderstorm Warning (TPROB)", "Destructive Severe Thunderstorm Warning",
             "Considerable Severe Thunderstorm Warning (TPROB)", "Considerable Severe Thunderstorm Warning",
             "Severe Thunderstorm Warning (TPROB)",
-            "Tornadic Special Marine Warning",
-            "Flash Flood Emergency", 
-            "Tsunami Warning", "Tsunami Watch",
-            "Tsunami Advisory", 
-            "Earthquake Warning",
-            "Hurricane Warning", "Hurricane Watch",
-            "Tropical Storm Warning",
-            "Blizzard Warning", "Ice Storm Warning", "Snow Squall Warning",
-            "Extreme Cold Watch"
         ],
         "all_events": false, // If you want to listen to all events (overrides listening_events) (NOT RECOMMEDNED)
         "sfx_beep_only": false, // If you want to use only the beep sfx for all alerts (true/false) (This ignores priority events)
@@ -94,244 +77,115 @@
         }
     },
     "tones": { // pre-sounded EAS tones to use for various events.
-        "sfx_beep": "/sfx/eas_sfx/beep-sfx.mp3",
-        "sfx_siren": "/sfx/eas_sfx/siren-eas.mp3",
-        "sfx_iphone": "/sfx/eas_sfx/iphone-eas.mp3",
-        "sfx_wail": "/sfx/eas_sfx/urgent-eas.mp3",
         "sfx_urgent": "/sfx/eas_sfx/basic-eas.mp3",
-        "sfx_uniden": "/sfx/eas_sfx/uniden-eas.mp3"
     },
     "dictionary": { // Predefined events with their respective sound effects and metadata.
         "Tornado Emergency": {
             "sfx_issued": "/sfx/tornado_sfx/tornado-upgraded.mp3",
-            "sfx_update": "/sfx/tornado_sfx/tornado-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": true, "wail": true, "urgent": false, "iphone": false, "uniden": false}
+            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "PDS Tornado Warning": {
             "sfx_issued": "/sfx/tornado_sfx/pds-tornado-issued.mp3",
-            "sfx_update": "/sfx/tornado_sfx/pds-tornado-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": true, "wail": false, "urgent": false, "iphone": false, "uniden": false}
+            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "Confirmed Tornado Warning": {
             "sfx_issued": "/sfx/tornado_sfx/confirmed-tornado-issued.mp3",
-            "sfx_update": "/sfx/tornado_sfx/tornado-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": true, "wail": false, "urgent": false, "iphone": true, "uniden": false}
+            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "Radar Indicated Tornado Warning": {
             "sfx_issued": "/sfx/tornado_sfx/radar-tornado-issued.mp3",
-            "sfx_update": "/sfx/tornado_sfx/tornado-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
             "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "PDS Tornado Watch": {
             "sfx_issued": "/sfx/tornado_sfx/watch-tornado-pds.mp3",
-            "sfx_update": "/sfx/eas_sfx/beep-sfx.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": false, "wail": false, "urgent": true, "iphone": false, "uniden": false}
+            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "EDS Severe Thunderstorm Warning (TPROB)": {
             "sfx_issued": "/sfx/severe_sfx/severe-eds-issued.mp3",
-            "sfx_update": "/sfx/severe_sfx/severe-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": true, "wail": true, "urgent": false, "iphone": false, "uniden": false}
+            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "EDS Severe Thunderstorm Warning": {
             "sfx_issued": "/sfx/severe_sfx/severe-eds-issued.mp3",
-            "sfx_update": "/sfx/severe_sfx/severe-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": true, "wail": true, "urgent": false, "iphone": false, "uniden": false}
+            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "Destructive Severe Thunderstorm Warning (TPROB)": {
             "sfx_issued": "/sfx/severe_sfx/severe-tor-destructive-issued.mp3",
-            "sfx_update": "/sfx/severe_sfx/severe-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": true, "wail": false, "urgent": false, "iphone": false, "uniden": false}
+            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "Destructive Severe Thunderstorm Warning": {
             "sfx_issued": "/sfx/severe_sfx/severe-destructive-issued.mp3",
-            "sfx_update": "/sfx/severe_sfx/severe-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": true, "wail": true, "urgent": false, "iphone": false, "uniden": false}
+            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "Considerable Severe Thunderstorm Warning (TPROB)": {
             "sfx_issued": "/sfx/severe_sfx/severe-tor-considerable-issued.mp3",
-            "sfx_update": "/sfx/severe_sfx/severe-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
             "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "Severe Thunderstorm Warning (TPROB)": {
             "sfx_issued": "/sfx/severe_sfx/severe-tor-issued.mp3",
-            "sfx_update": "/sfx/severe_sfx/severe-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
-            "sfx_tts": false,
-            "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
-        },
-        "Considerable Severe Thunderstorm Warning": {
-            "sfx_issued": "/sfx/severe_sfx/severe-considerable-issued.mp3",
-            "sfx_update": "/sfx/severe_sfx/severe-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
             "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "Severe Thunderstorm Warning": {
             "sfx_issued": "/sfx/severe_sfx/severe-issued.mp3",
-            "sfx_update": "/sfx/severe_sfx/severe-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
             "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "Tornado Watch": {
             "sfx_issued": "/sfx/watch_sfx/watch-torado.mp3",
-            "sfx_update": "/sfx/eas_sfx/beep-sfx.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
             "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "Severe Thunderstorm Watch": {
             "sfx_issued": "/sfx/watch_sfx/watch-svr.mp3",
-            "sfx_update": "/sfx/eas_sfx/beep-sfx.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
             "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "Flash Flood Emergency": {
             "sfx_issued": "/sfx/flood_sfx/flash-flood-upgraded.mp3",
-            "sfx_update": "/sfx/flood_sfx/flash-flood-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": false, "wail": true, "urgent": false, "iphone": false, "uniden": false}
+            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "Considerable Flash Flood Warning": {
             "sfx_issued": "/sfx/flood_sfx/flash-flood-considerable-issued.mp3",
-            "sfx_update": "/sfx/flood_sfx/flash-flood-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
             "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "Flash Flood Warning": {
             "sfx_issued": "/sfx/flood_sfx/flash-flood-issued.mp3",
-            "sfx_update": "/sfx/flood_sfx/flash-flood-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
             "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         },
         "Flash Flood Watch": {
             "sfx_issued": "/sfx/watch_sfx/watch-flash-flood.mp3",
-            "sfx_update": "/sfx/eas_sfx/beep-sfx.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
             "sfx_tts": false,
             "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
-        },
-        "Tornadic Special Marine Warning": {
-            "sfx_issued": "/sfx/severe_sfx/special-marine-issued.mp3",
-            "sfx_update": "/sfx/severe_sfx/special-marine-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
-            "sfx_tts": false,
-            "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
-        },
-        "Special Marine Warning": {
-            "sfx_issued": "/sfx/severe_sfx/special-marine-issued.mp3",
-            "sfx_update": "/sfx/severe_sfx/special-marine-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
-            "sfx_tts": false,
-            "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
-        },
-        "Tsunami Warning": {
-            "sfx_issued": "/sfx/tsunami_sfx/tsunami-issued.mp3",
-            "sfx_update": "/sfx/tsunami_sfx/tsunami-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
-            "sfx_tts": false,
-            "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
-        },
-        "Blizzard Warning": {
-            "sfx_issued": "/sfx/winter_sfx/blizzard-warning-issued.mp3",
-            "sfx_update": "/sfx/winter_sfx/blizzard-warning-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
-            "sfx_tts": false,
-            "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": false, "wail": true, "urgent": false, "iphone": false, "uniden": false}
-        },
-        "Ice Storm Warning": {
-            "sfx_issued": "/sfx/winter_sfx/ice-storm-warning-issued.mp3",
-            "sfx_update": "/sfx/winter_sfx/ice-storm-warning-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
-            "sfx_tts": false,
-            "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": false, "wail": true, "urgent": false, "iphone": false, "uniden": false}
-        },
-        "Lake Effect Snow Warning": {
-            "sfx_issued": "/sfx/winter_sfx/lake-effect-snow-warning-issued.mp3",
-            "sfx_update": "/sfx/winter_sfx/lake-effect-snow-warning-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
-            "sfx_tts": false,
-            "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
-        },
-        "Winter Storm Warning": {
-            "sfx_issued": "/sfx/winter_sfx/winter-storm-warning-issued.mp3",
-            "sfx_update": "/sfx/winter_sfx/winter-storm-warning-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
-            "sfx_tts": false,
-            "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
-        },
-        "Winter Weather Advisory": {
-            "sfx_issued": "/sfx/winter_sfx/winter-weather-advisory-issued.mp3",
-            "sfx_update": "/sfx/winter_sfx/winter-weather-advisory-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
-            "sfx_tts": false,
-            "sfx_tts_format": "Attention, This %properties.event% has been {STATUS}",
-            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
-        },
-        "Special Event": {
-            "sfx_issued": "/sfx/misc_sfx/special-event-issued.mp3",
-            "sfx_update": "/sfx/misc_sfx/special-event-updated.mp3",
-            "sfx_cancel": "/sfx/eas_sfx/beep-sfx.mp3",
-            "sfx_tts": false,
-            "sfx_tts_format": "Attention, %properties.event% has been {STATUS}",
-            "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
-        },
-        "Pulse Point": {
-            "sfx_issued": "",
-            "sfx_update": "",
-            "sfx_cancel": "",
-            "sfx_tts": true,
-            "sfx_tts_format": "CAD UPDATE: %properties.agency% has been {STATUS} for a %properties.event%",
             "metadata": { "siren": false, "wail": false, "urgent": false, "iphone": false, "uniden": false}
         }
     },
