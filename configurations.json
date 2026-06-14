@@ -34,18 +34,11 @@
             "Flash Flood Watch",
             "Severe Thunderstorm Watch",
             "Tornado Watch",
-            "Special Marine Warning",
             "Flash Flood Warning",
             "Severe Thunderstorm Warning",
             "Tornado Warning",
-            "Snow Squall Warning",
-            "Tsunami Warning",
-            "Tsunami Watch",
-            "Tsunami Advisory",
-            "Earthquake Warning",
             "Hurricane Warning",
             "Hurricane Watch",
-            "Special Weather Statement"
         ],
         "beep_only": false,
         "show_updates": true,
@@ -62,9 +55,6 @@
             "Confirmed Tornado Warning",
             "Radar Indicated Tornado Warning",
             "Flash Flood Emergency",
-            "Tsunami Warning",
-            "Tsunami Watch",
-            "Tsunami Advisory",
             "Hurricane Warning",
             "Hurricane Watch"
         ]
@@ -225,9 +215,6 @@
                 "Confirmed Tornado Warning",
                 "Radar Indicated Tornado Warning",
                 "Flash Flood Emergency",
-                "Tsunami Warning",
-                "Tsunami Watch",
-                "Tsunami Advisory",
                 "Hurricane Warning",
                 "Hurricane Watch"
             ]
@@ -568,196 +555,118 @@
                 "Severe Thunderstorm Warning (TPROB)",
                 "Confirmed Tornado Warning",
                 "Flash Flood Emergency",
-                "Tsunami Warning",
                 "Hurricane Warning",
                 "Hurricane Watch"           
             ]
         }
     },
     "tone_sounds": {
-        "beep": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
         "eas": "/assets/media/audio/eas_sfx/urgent-eas.mp3",
-        "siren": "/assets/media/audio/eas_sfx/siren-eas.mp3",
-        "amber": "/assets/media/audio/eas_sfx/basic-eas.mp3",
-        "uniden": "/assets/media/audio/eas_sfx/uniden-eas.mp3"
     },
     "alert_dictionary": {
         "Tornado Emergency": {
             "new": "/assets/media/audio/tornado_sfx/tornado-upgraded.mp3",
-            "update": "/assets/media/audio/tor/tornado-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
-            "siren": true,
-            "eas": false,
-            "amber": false
-        },
-        "Tsunami Warning": {
-            "new": "/assets/media/audio/tsunami_sfx/tsunami-issued.mp3",
-            "update": "/assets/media/audio/tsunami_sfx/tsunami-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
-            "siren": true,
+            "siren": false,
             "eas": false,
             "amber": false
         },
         "PDS Tornado Warning": {
             "new": "/assets/media/audio/tornado_sfx/pds-tornado-issued.mp3",
-            "update": "/assets/media/audio/tornado_sfx/pds-tornado-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": false,
-            "eas": true,
+            "eas": false,
             "amber": false
         },
         "PDS Tornado Watch": {
             "new": "/assets/media/audio/watch_sfx/watch-tornado-pds.mp3",
-            "update": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": false,
             "eas": false,
             "amber": true
         },
         "Flash Flood Emergency": {
             "new": "/assets/media/audio/flood_sfx/flash-flood-upgraded.mp3",
-            "update": "/assets/media/audio/flood_sfx/flash-flood-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": false,
             "eas": true,
             "amber": false
         },
         "Confirmed Tornado Warning": {
             "new": "/assets/media/audio/tornado_sfx/confirmed-tornado-issued.mp3",
-            "update": "/assets/media/audio/tornado_sfx/tornado-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": true,
             "eas": false,
             "amber": false
         },
         "EDS Severe Thunderstorm Warning": {
             "new": "/assets/media/audio/severe_sfx/severe-eds-issued.mp3",
-            "update": "/assets/media/audio/severe_sfx/severe-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": true,
             "eas": false,
             "amber": false
         },
         "Destructive Severe Thunderstorm Warning": {
             "new": "/assets/media/audio/severe_sfx/severe-destructive-issued.mp3",
-            "update": "/assets/media/audio/severe_sfx/severe-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": false,
             "eas": true,
             "amber": false
         },
         "Destructive Severe Thunderstorm Warning (TPROB)": {
-            "new": "/assets/media/audio/severe_sfx/severe-tor-destructive-issued.mp3",
-            "update": "/assets/media/audio/severe_sfx/severe-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": false,
             "eas": true,
             "amber": false
         },
         "Considerable Severe Thunderstorm Warning (TPROB)": {
             "new": "/assets/media/audio/severe_sfx/severe-tor-considerable-issued.mp3",
-            "update": "/assets/media/audio/severe_sfx/severe-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": false,
             "eas": false,
             "amber": false
         },
         "Severe Thunderstorm Warning (TPROB)": {
             "new": "/assets/media/audio/severe_sfx/severe-tor-issued.mp3",
-            "update": "/assets/media/audio/severe_sfx/severe-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": false,
             "eas": false,
             "amber": false
         },
         "Considerable Severe Thunderstorm Warning": {
             "new": "/assets/media/audio/severe_sfx/severe-considerable-issued.mp3",
-            "update": "/assets/media/audio/severe_sfx/severe-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": false,
             "eas": false,
             "amber": false
         },
         "Severe Thunderstorm Warning": {
             "new": "/assets/media/audio/severe_sfx/severe-issued.mp3",
-            "update": "/assets/media/audio/severe_sfx/severe-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": false,
             "eas": false,
             "amber": false
         },
         "Radar Indicated Tornado Warning": {
             "new": "/assets/media/audio/tornado_sfx/radar-tornado-issued.mp3",
-            "update": "/assets/media/audio/ttornado_sfxor/tornado-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": false,
             "eas": false,
             "amber": false
         },
         "Considerable Flash Flood Warning": {
             "new": "/assets/media/audio/flood_sfx/flash-flood-considerable-issued.mp3",
-            "update": "/assets/media/audio/flood_sfx/flash-flood-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": false,
             "eas": false,
             "amber": false
         },
         "Flash Flood Warning": {
             "new": "/assets/media/audio/flood_sfx/flash-flood-issued.mp3",
-            "update": "/assets/media/audio/flood_sfx/flash-flood-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
-            "siren": false,
-            "eas": false,
-            "amber": false
-        },
-        "Special Marine Warning": {
-            "new": "/assets/media/audio/severe_sfx/special-marine-issued.mp3",
-            "update": "/assets/media/audio/severe_sfx/special-marine-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": false,
             "eas": false,
             "amber": false
         },
         "Flash Flood Watch": {
             "new": "/assets/media/audio/watch_sfx/watch-flash-flood.mp3",
-            "update": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": false,
             "eas": false,
-            "amber": false,
-            "autobeep": false
+            "amber": false
         },
         "Severe Thunderstorm Watch": {
             "new": "/assets/media/audio/watch_sfx/watch-svr.mp3",
-            "update": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": false,
             "eas": false,
-            "amber": false,
-            "autobeep": false
+            "amber": false
         },
         "Tornado Watch": {
             "new": "/assets/media/audio/watch_sfx/watch-torado.mp3",
-            "update": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
-            "siren": false,
-            "eas": false,
-            "amber": false,
-            "autobeep": false
-        },
-        "Special Weather Statement": {
-            "new": "/assets/media/audio/misc_sfx/special-weather-statement.mp3",
-            "update": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
-            "siren": false,
-            "eas": false,
-            "amber": false,
-            "autobeep": false
-        },
-        "Special Event": {
-            "new": "/assets/media/audio/misc_sfx/special-event-issued.mp3",
-            "update": "/assets/media/audio/misc_sfx/special-event-updated.mp3",
-            "cancel": "/assets/media/audio/eas_sfx/beep-sfx.mp3",
             "siren": false,
             "eas": false,
             "amber": false
@@ -767,22 +676,15 @@
         {
             "type": "Tornado Emergency",
             "color": {
-                "light": "rgb(209,38,215)",
-                "dark": "rgb(159,37,163)"
-            }
-        },
-        {
-            "type": "Tsunami Warning",
-            "color": {
-                "light": "rgb(209,38,215)",
-                "dark": "rgb(159,37,163)"
+                "light": "rgb(144,24,148)",
+                "dark": "rgb(124,23,128)"
             }
         },
         {
             "type": "PDS Tornado Warning",
             "color": {
-                "light": "rgb(214,56,54)",
-                "dark": "rgb(163,25,25)"
+                "light": "rgb(207,85,212)",
+                "dark": "rgb(220,18,227)"
             }
         },
         {
@@ -837,19 +739,12 @@
         {
             "type": "Tornado Warning",
             "color": {
-                "light": "rgb(214,56,54)",
-                "dark": "rgb(163,25,25)"
+                "light": "rgb(217,42,39)",
+                "dark": "rgb(189,17,17)"
             }
         },
         {
             "type": "Flash Flood Emergency",
-            "color": {
-                "light": "rgb(249,56,54)",
-                "dark": "rgb(203,25,25)"
-            }
-        },
-        {
-            "type": "Snow Squall Warning",
             "color": {
                 "light": "rgb(249,56,54)",
                 "dark": "rgb(203,25,25)"
@@ -867,13 +762,6 @@
             "color": {
                 "light": "rgb(102,209,60)",
                 "dark": "rgb(73,155,40)"
-            }
-        },
-        {
-            "type": "Special Marine Warning",
-            "color": {
-                "light": "rgb(42,81,224)",
-                "dark": "rgb(28,61,181)"
             }
         },
         {
